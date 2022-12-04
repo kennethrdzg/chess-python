@@ -430,7 +430,7 @@ class King(ChessPiece):
                 #QUEENSIDE
                 rook = board[self.position-4]
                 if isinstance(rook, Rook): 
-                    rook.make_move(board, self.posicion-1)
+                    rook.make_move(board, self.position-1)
         if isinstance(board[move], ChessPiece): 
             board[move].position = -1
         board[move] = self

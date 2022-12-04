@@ -292,6 +292,7 @@ def main_loop():
     turn = WHITE
     n = number_of_moves(board, turn, white_pieces, black_pieces)
     rnd = 1
+    print("Input movements in long algebraic notation (ex: \"b2b4\")")
     while n > 0: 
         print_board(board, turn)
         if turn == WHITE: 
