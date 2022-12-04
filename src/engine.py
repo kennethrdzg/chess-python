@@ -169,7 +169,6 @@ class Prometheus:
         return (best_move["start"], best_move["move"])
     def minimax(self, board: list, turn: bool, white_pieces: list, black_pieces: list, depth: int, Max = True, alpha = -inf, beta = inf)->dict: 
         n = number_of_moves(board, turn, white_pieces, black_pieces)
-        print_board(board, self.color)
         if depth == 0 or n == 0: 
             if n == 0: 
                 if not is_in_check(board, turn, white_pieces, black_pieces): 
